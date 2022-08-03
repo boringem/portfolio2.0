@@ -23,7 +23,7 @@ let projects = [
             "width": 350,
             "height": 450,
         },
-        "detailCols": "3",
+        "detailCols": 3,
         "details": [
             {
                 "id": 1,
@@ -103,7 +103,7 @@ let projects = [
             "width": 350,
             "height": 450,
         },
-        "detailCols": "4",
+        "detailCols": 4,
         "details": [
             {
                 "id": 1,
@@ -217,7 +217,7 @@ let projects = [
             "width": 450,
             "height": 450,
         },
-        "detailCols": "3",
+        "detailCols": 3,
         "details": [
             {
                 "id": 1,

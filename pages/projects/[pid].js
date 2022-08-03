@@ -68,8 +68,16 @@ function Project () {
         txtCl = 'text-black'
     }
     
-    var detailCols = 'grid gap-5 m-3 border-t-2 ' + bdrCl + ' border-dotted grid-cols-1 md:grid-cols-' + project.detailCols
-    var colSpan = 'mt-5 md:col-span-' + project.detailCols;
+    var detCols, detColSpan;
+    if (project.detailCols == 3) {
+        detCols = 'md:grid-cols-3';
+        detColSpan = 'md:col-span-3'
+    } else if (project.detailCols == 4) {
+        detCols = 'md:grid-cols-4'
+        detColSpan = 'md:col-span-4'
+    }
+    var detailCols = 'grid gap-5 m-3 border-t-2 ' + bdrCl + ' border-dotted grid-cols-1 ' + detCols;
+    var colSpan = 'mt-5 ' + detColSpan;
     colSpan = colSpan;
     var projDetails = project.details;
     var projSections = project.sections;
