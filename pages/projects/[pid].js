@@ -69,7 +69,7 @@ function Project () {
     }
     
     var detailCols = 'grid gap-5 m-3 border-t-2 ' + bdrCl + ' border-dotted grid-cols-1 md:grid-cols-' + project.detailCols
-    var colSpan = 'mt-5 col-span-' + project.detailCols;
+    var colSpan = 'mt-5 md:col-span-' + project.detailCols;
     colSpan = colSpan;
     var projDetails = project.details;
     var projSections = project.sections;
