@@ -1,0 +1,19 @@
+.m-button {
+    padding: 2%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    display: inline-block;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.m-button:hover {
+    box-shadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
+    text-decoration: underline;
+}
+

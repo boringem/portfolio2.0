@@ -1,0 +1,19 @@
+.m-card {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+
+}
+
+.m-card-bdr {
+    border-style: hidden;
+    border-radius: 10px;
+    border-width: thin;
+}
+
+.m-card:hover,
+.m-card:focus,
+.m-card:active {
+    border-style: hidden;
+    box-shadow: rgba(149, 157, 165, 0.25) 0px 8px 24px;
+}
