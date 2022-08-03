@@ -11,17 +11,17 @@ function Project () {
     const router = useRouter()
     const { pid } = router.query
     console.log('PID')
-    let projId = pid;
+    var projId = pid;
     projId = parseInt(pid);
     projId = projId - 1;
 
-    let data = projects;
+    var data = projects;
     console.log('dATA', data)
-    let project = data[projId];
+    var project = data[projId] || data[1];
 
     console.log('DATA AT PROJID', data[projId]);
 
-    let projName = project.name;
+    let projName = project.name; 
 
     var imgEl
     if (project.overviewImg.type == 'img') {
