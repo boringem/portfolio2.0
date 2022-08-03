@@ -224,8 +224,8 @@ let projects = [
                 "img": {
                     "src": "/portfolio/shower/shower-setup.png",
                     "alt": "Setup by taking a shower",
-                    "width": 350,
-                    "height": 550
+                    "width": 250,
+                    "height": 450
                 }, 
                 "text": "Setup by taking a shower",
             },
@@ -234,8 +234,8 @@ let projects = [
                 "img": {
                     "src": "/portfolio/shower/shower-manual.png",
                     "alt": "Manual Setup",
-                    "width": 350,
-                    "height": 550
+                    "width": 250,
+                    "height": 450
                 },
                 "text": "Manual Setup"
             },
@@ -244,8 +244,8 @@ let projects = [
                 "img": {
                     "src": "/portfolio/shower/shower-stats.png",
                     "alt": "Shower statistics",
-                    "width": 350,
-                    "height": 550
+                    "width": 250,
+                    "height": 450
                 },
                 "text": "Shower Statistics"
             }
@@ -274,8 +274,8 @@ let projects = [
                         "img": {
                             "src": "/portfolio/shower/temp-icon.png",
                             "alt": "Temperature Icon",
-                            "width": 250,
-                            "height": 450
+                            "width": 150,
+                            "height": 190
                         }, 
                         "text": "Temperature Icon"
                     },
@@ -284,8 +284,8 @@ let projects = [
                         "img": {
                             "src": "/portfolio/shower/water-icon.png",
                             "alt": "Water Usage Icon",
-                            "width": 250,
-                            "height": 450
+                            "width": 150,
+                            "height": 190
                         }, 
                         "text": "Water Usage Icon"
                     },
@@ -294,8 +294,8 @@ let projects = [
                         "img": {
                             "src": "/portfolio/shower/duration-icon.png",
                             "alt": "Duration Icon",
-                            "width": 250,
-                            "height": 450
+                            "width": 150,
+                            "height": 190
                         }, 
                         "text": "Duration Icon"
                     }
