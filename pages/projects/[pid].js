@@ -13,13 +13,10 @@ function Project () {
     console.log('PID')
     var projId = pid;
     projId = parseInt(pid);
-    projId = projId - 1;
+    projId = projId - 2;
 
     var data = projects;
-    console.log('dATA', data)
     var project = data[projId] || data[1];
-
-    console.log('DATA AT PROJID', data[projId]);
 
     let projName = project.name; 
 
@@ -35,30 +32,52 @@ function Project () {
         imgEl = <video width={project.overviewImg.width} height={project.overviewImg.height} controls><source src={project.overviewImg.src} type="video/mp4"></source></video>
     }
 
-    var bdrCl = 'border-project' + project.id
+    var bdrCl;
+    var bgCl = project.bgCl;
+    var btnClTxt;
+    var txtCl; 
+    if (project.id == 2) {
+        bgCl = 'bg-project2';
+        bdrCl = 'border-project2'
+        btnClTxt = 'text-project2'
+        txtCl = 'text-white'
+    } else if (project.id == 3) {
+        bgCl = 'bg-project3'
+        bdrCl = 'border-project3'
+        btnClTxt = 'text-project3'
+        txtCl = 'text-white'
+    } else if (project.id == 4) {
+        bgCl = 'bg-project4'
+        bdrCl = 'border-project4'
+        btnClTxt = 'text-project4'
+        txtCl = 'text-black'
+    } else if (project.id == 5) {
+        bgCl = 'bg-project5'
+        bdrCl = 'border-project5'
+        btnClTxt = 'text-black'
+        txtCl = 'text-black'
+    } else if (project.id == 6) {
+        bgCl = 'bg-project6'
+        bdrCl = 'border-project6'
+        btnClTxt = 'text-black'
+        txtCl = 'text-black'
+    } else if (project.id == 7) {
+        bgCl = 'bg-project7'
+        bdrCl = 'border-project7'
+        btnClTxt = 'text-black'
+        txtCl = 'text-black'
+    }
     
-    var detailCols = 'grid gap-5 m-3 border-t-2 ' + bdrCl + ' border-dotted grid-cols-' + project.detailCols
+    var detailCols = 'grid gap-5 m-3 border-t-2 ' + bdrCl + ' border-dotted grid-cols-1 md:grid-cols-' + project.detailCols
     var colSpan = 'mt-5 col-span-' + project.detailCols;
     colSpan = colSpan;
     var projDetails = project.details;
     var projSections = project.sections;
+    var clName = 'grid gap-2 grid-cols-1 md:grid-cols-4 ' + bgCl + ' items-center'
 
-    var bgCl = 'bg-project' + project.id; 
-    bgCl = bgCl;
-    var clName = 'grid gap-2 grid-cols-4 ' + bgCl + ' items-center'
-
-    var btnClBdr = 'border-project' + project.id;
-    var btnClTxt = 'text-project' + project.id;
-
-    if (project.id == '5' || project.id == '6' || project.id == '7') {
-        btnClTxt = 'text-black';
-    }
-    btnClBdr = btnClBdr;
-    btnClTxt = btnClTxt;
-    var btnCl = btnClBdr + ' ' + btnClTxt;
+    var btnCl = bdrCl + ' ' + btnClTxt;
     var btnClName = 'mt-2 border border-2 border-solid ' + btnCl;
 
-    var txtCl = 'text-' + project.textCl;
     txtCl = txtCl + ' col-span-3 font-bold pr-5';
     txtCl = txtCl;
 
@@ -96,7 +115,7 @@ function Project () {
                     <Button color={btnClName} isLink="true" dest={project.extDest} text="See It Online" />
                 </div>
             </section>
-            <section className="grid grid-cols-2 gap-4 m-3">
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-4 m-3">
                 <div className="mt-5">
                     <h2 className="text-3xl font-heading font-bold">Project Overview</h2>
                     <p className="mt-3 font-body">{project.overviewText}</p>

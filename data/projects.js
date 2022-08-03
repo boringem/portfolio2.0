@@ -1,22 +1,10 @@
 let projects = [
     {
-        "id": 1,
-        "name": "The Cage",
-        "description": "A streaming service dedicated to Nicolas Cage movies that score lower than 15% on Rotten Tomatoes.",
-        "img": {
-            "src": "/portfolio/the-cage/the-cage-thumb.png", 
-            "alt": "The Cage thumbnail",
-            "width": 150,
-            "height": 250,
-            "type": "mobile"
-        },
-        "linkDest": "/projects/1",
-        "extDest": "https://thecage.vercel.app/"
-    },
-    {
         "id": 2,
         "name": "Vacationlands 1946",
-        "textCl": "white",
+        "textCl": "text-white",
+        "bgCl": 'bg-project2',
+        "btnCl": 'text-project2 border-project2',
         "description": "A prototype for a museum kiosk using the 1946 Union Pacific Western Vacationlands brochure to explore how rail travel interacted with historical narratives surrounding the American West.",
         "img": {
             "src": "/portfolio/vacationlands/vacationlands-thumb.png", 
@@ -94,7 +82,9 @@ let projects = [
     {
         "id": 3,
         "name": "Online Lectures",
-        "textCl": "white",
+        "textCl": "text-white",
+        "bgCl": 'bg-project3',
+        "btnCl": 'text-project3 border-project3',
         "description": "An LMS case study done for a class project, attempting to make online learning easier for students and teachers.",
         "img": {
             "src": "/portfolio/lms/lms-thumb.png", 
@@ -206,7 +196,9 @@ let projects = [
     {
         "id": 4,
         "name": "Smart Shower",
-        "textCl": "black",
+        "textCl": "text-black",
+        "bgCl": 'bg-project4',
+        "btnCl": 'text-project4 border-project4',
         "description": "A shower experience designed to save water.",
         "img": {
             "src": "/portfolio/shower/shower-thumb.png", 
@@ -314,7 +306,9 @@ let projects = [
     {
         "id": 5,
         "name": "Wordpress Audio Theme",
-        "textCl": "black",
+        "textCl": "text-black",
+        "bgCl": 'bg-project5',
+        "btnCl": 'text-black border-project5',
         "description": "Theme and plugin development for an audio engineering portfolio.",
         "img": {
             "src": "/portfolio/wp/wp-thumb.png", 
@@ -334,7 +328,9 @@ let projects = [
     {
         "id": 6,
         "name": "Virtual Piano",
-        "textCl": "black",
+        "textCl": "text-black",
+        "bgCl": 'bg-project6',
+        "btnCl": 'text-black border-project6',
         "description": "A virtual keyboard that correlates piano keys with sheet music. Built for VandyHacks 2019.",
         "img": {
             "src": "/portfolio/piano/piano-thumb.png", 
@@ -354,7 +350,9 @@ let projects = [
     {
         "id": 7,
         "name": "Adopt A Dinosaur",
-        "textCl": "black",
+        "textCl": "text-black",
+        "bgCl": 'bg-project7',
+        "btnCl": 'text-black border-project7',
         "description": "Adopt and learn about different dinosaurs! Built on a LAMP stack as a class project.",
         "img": {
             "src": "/portfolio/dinosaur/dinosaur-thumb.png", 

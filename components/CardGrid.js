@@ -31,7 +31,7 @@ class CardGrid extends React.Component {
         let colStr = colCl;
         let cardData = this.getCardData();
         return (
-            <div className={`grid gap-4 grid-cols-2`}>
+            <div className={`grid gap-4 grid-cols-1 md:grid-cols-2`}>
                 {cardData.map(card => (
                     <Card key={card.id} id={card.id} name={card.name} imgSrc={card.img.src} imgW={card.img.width} imgH={card.img.height} imgType={card.img.type} description={card.description} linkDest={card.linkDest} extDest={card.extDest} />
                 ))}

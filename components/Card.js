@@ -6,7 +6,7 @@ import Link from 'next/link'
 function Card(props) {
     var bgString = 'bg-project' + props.id;
     var bgCl = bgString + 'cursor-pointer w-full border-solid border-2 hover:drop-shadow-card p-5 border-lightGray grid grid-cols-3 gap-4 content-center';
-    var btnCl = 'hover:border-project' + props.id; 
+    var btnCl = 'mb-2 hover:border-project' + props.id; 
     var projUrl = '/projects/' + props.id;
     var imgSr =  props.imgSrc;
     var imgH = props.imgH
