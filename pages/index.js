@@ -37,12 +37,12 @@ export default function Home() {
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-bold"
+          className="font-bold hover:underline hover:text-project2"
         >
           Powered by Vercel
         </a>
-        <a href="https://www.github.com/boringem" target="_blank" rel="noopener noreferrer">Github</a>
-        <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.github.com/boringem" className="hover:text-project2 hover:underline" target="_blank" rel="noopener noreferrer">Github</a>
+        <a href="https://www.linkedin.com/in/madelyn-vagle-842b76123/" className="hover:text-project2 hover:underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </footer>
     </div>
   )
